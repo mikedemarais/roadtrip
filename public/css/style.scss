@@ -234,7 +234,7 @@ sidebar{
 .destination-item-map{
 	width: 100%;
 	height: 80%;
-	background: lime;
+	background: #fff;
 }
 .destination-item-label{
 	display: table;
@@ -246,5 +246,33 @@ sidebar{
 		display: table-cell;
 		vertical-align: middle;
 		margin: 0 auto;
+	}
+}
+.sidebar-cta{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 54px;
+	width: 100%;
+	display: table !important;
+	vertical-align: middle;
+	background-color: #fff;
+	background-image: url('../img/blue_dots.png');
+	text-align: center;
+	border-top: 1px solid rgba(#3498db,0.2);
+	button{
+		height: 44px;
+		width: 90%;
+		padding: 6px 10px;
+		background: #3498db;
+		font-weight: 400;
+		font-size: 16px;
+		margin-top: 5px;
+		color: white;
+		display: table-cell !important;
+		vertical-align: middle;
+		@include box-shadow(none);
+		border: none;
+		@include border-radius(12px)
 	}
 }

@@ -52,6 +52,9 @@
         </ul>
 
       </section>
+      <section class="sidebar-cta">
+        <button>Start Roadtrip</button>
+      </section>
     </sidebar>
     <canvas id="hyperFixed"></canvas>
     <canvas id="hyper"></canvas>
@@ -64,7 +67,7 @@ $(document).ready( function(){
   
   L.control.attribution(false);
   var map = L.mapbox.map('map', 'mikedemarais.j947j8ae');
- var sidebarNavHeight = $('.sidebar-nav').outerHeight() + $('.sidebar-masthead').outerHeight();
+ var sidebarNavHeight = $('.sidebar-nav').outerHeight() + $('.sidebar-masthead').outerHeight() + $('.sidebar-cta').outerHeight() + 8;
   $('.sidebar-content').css({'height': ($(window).height() - sidebarNavHeight) + 'px'})
   //map.legendControl.removeLegend(map);
 });
